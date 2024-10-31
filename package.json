@@ -1,0 +1,27 @@
+{
+  "name": "express-typescript",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "scripts": {
+    "prestart": "tsc",
+    "start": "node dist/server.js",
+    "poststart": "echo 'App is running'",
+    "dev": "node --env-file .env --watch dist/server.js & tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@types/eslint__js": "^8.42.3",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.8.5",
+    "eslint": "^9.13.0",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.12.2"
+  },
+  "dependencies": {
+    "express": "^5.0.0"
+  }
+}
